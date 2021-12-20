@@ -43,7 +43,7 @@ class _MessagingWidgetState extends State<MessagingWidget> {
   final TextEditingController _msgController = TextEditingController();
 
   String _token =
-      "AAAAesu7sc0:APA91bFJ08Q55bv4xt1T8AphBMesbH_dwAjJCMUxANTSrODq49feVNdp0Q3HG9Cjd4j27koFLeV5h6Ix_AcsjWr8jAo0EGDaGaLNfbCzfyc-gWpMU4oT7wpvA4de5syWFO3dMMcBM55s";
+      "SECRET_KEY";
 
   @override
   void initState() {
@@ -121,7 +121,7 @@ class _MessagingWidgetState extends State<MessagingWidget> {
       headers: <String, String>{
         'Content-Type': 'application/json',
         'Authorization':
-            'key=AAAAesu7sc0:APA91bFJ08Q55bv4xt1T8AphBMesbH_dwAjJCMUxANTSrODq49feVNdp0Q3HG9Cjd4j27koFLeV5h6Ix_AcsjWr8jAo0EGDaGaLNfbCzfyc-gWpMU4oT7wpvA4de5syWFO3dMMcBM55s',
+            'key=<SECRET_KEY>',
       },
       body: jsonEncode(
         <String, dynamic>{
